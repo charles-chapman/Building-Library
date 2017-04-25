@@ -2,39 +2,42 @@
 
 <html>
 
-<head>
+  <head>
 
-  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-  <script type="text/javascript"></script>
+     <script type="text/javascript"></script>
     
-  <script src="js/main.js"></script>
+     <script src="js/main.js"></script>
+
+
 
   <title></title>
 
-</head>
+
+  </head>
 
 
-<body>
+  <body>
 
-<h1 class="intro">TEST</h1>
-<button id="btn">Click Me!</button>
+    <h1 class="intro">TEST</h1>
 
-<script>
+    <button id="btn">Click Me!</button>
 
-  $(document).ready(function(){
+    <script>
+    	$(document).ready(function(){
 
-     $('#btn').click(function(){
-       //make sure you place a dot before intro, does not work without it
-       $('.intro').hide()
+    		$('#btn').click(function(){
 
-     })
-  })
-
-</script>
+    			 $('.intro').toggle()
+    		})
+    	})
 
 
+    </script>
 
 
-</body>
+
+
+  </body>
 </html>
