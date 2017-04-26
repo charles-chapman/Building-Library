@@ -10,11 +10,6 @@
     
      <script src="js/main.js"></script>
 
-     <!--difference from fade out, the header starts off invisible-->
-     <style>
-     	.intro { display:none; }
-     </style>
-
 
 
   <title></title>
@@ -29,15 +24,21 @@
   <button id="btn">Click Me!</button>
 
   <script>
+
+    $(document).ready(function(){
+
+    	$('#btn').click(function(){
+
+    		$('.intro').fadeOut()
+    	})
+    })
   	
-  	$(document).ready(function(){
 
-  		$('#btn').click(function(){
 
-  			$('.intro').fadeIn()
-  		})
-  	})
+
   </script>
+
+
 
 
   </body>
