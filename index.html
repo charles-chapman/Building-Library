@@ -29,11 +29,11 @@
 
        $(document).ready(function() {
 
-          //when the curcer glides over the button, the effect is active//
-       	  $('#btn').mouseenter(function() {
+          //the effect is active as soon as the curcer leave the button//
+       	  $('#btn').mouseleave(function() {
 
             //you can use both, words or numbers for duration of time//
-       	  	 $('.intro').hide("slow")
+       	  	 $('.intro').hide("fast")
        	  	 
        	  })
        })
