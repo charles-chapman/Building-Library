@@ -10,7 +10,7 @@
     
      <script src="js/main.js"></script>
 
-        
+
 
   <title></title>
 
@@ -20,25 +20,23 @@
 
   <body>
 
-  <h1 class="intro">TEST</h1>
-  <button id="btn">Click Me!</button>
+     <h1 class="intro">TEST</h1>
 
-    <script>
-
-      $(document).ready(function(){
-
-      	$('#btn').click(function(){
-
-      		$('.intro').slideToggle()
-      	})
-      })
-  	
+     <button id="btn">Click Me!</button>
 
 
-    </script>
+     <script>
 
+       $(document).ready(function() {
 
+       	  $('#btn').dblclick(function() {
 
+       	  	 $('.intro').slideUp(2000)
+       	  	 
+       	  })
+       })
+     	
+     </script>
 
   </body>
 </html>
