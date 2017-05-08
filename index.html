@@ -10,41 +10,38 @@
     
      <script src="js/main.js"></script>
 
-     <!--usually found in the css file these codes, but in javascript, we can place them here-->
-     <style>     	
-     	div { width:200px; height:200px; background: green; position: relative; }
-     </style>
-
-
-
-  <title></title>
-
   </head>
-
 
   <body>
 
-    <!--be mindful on some function have capital letters, many don't-->
-    <div id="divBox"></div>
-    <button id="btn">Click to Animate</button>
+    <h1>JavaScript Arrays</h1>
 
-      <script>
+    <p id="demo"></p>
 
-        $(document).ready(function() {
+    <script>
 
-            //single quotation marks and hash tags//
-        	$('#btn').click(function() {
+      var truckArray = [
+  {
+    name: "Toyota Tacoma",
+    power: "four cylinder",
+    door: "four"
+    },
+  {
+  	name: "chevrolet silverado",
+  	power: "eight cylinder",
+  	door: "four"
+    },
+  {
+    name: "ford f10",
+    power: "six cylinder",
+    door: "four"
+  }
+    ]
 
-                //notice, instead of using the css file, we place the info here in the index//
-        		$('#divBox').animate({
-        			left:   '300px',
-        			width:  '500px',
-        			height: '400px'
-        		})
-        	})
-        })
+    for(i = 0; i < truckArray.length; i++){
+    	if(truckArray[i].power <= 4){
+    		console.log(truckArray[i].name + "" + truckArray[i].power)
       	
-      </script>
-      
-  </body>
+   </script>
+  </body>    
 </html>
