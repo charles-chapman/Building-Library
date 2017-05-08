@@ -10,38 +10,30 @@
     
      <script src="js/main.js"></script>
 
+  <title></title>
+
   </head>
 
   <body>
 
-    <h1>JavaScript Arrays</h1>
-
-    <p id="demo"></p>
+    <form>
+    	
+    	<input placeholder="what is your name?" id="username">
+    	<input placeholder="password" id="password">
+    	<button type="button" onclick="getinfo()">click me</button>  
+    	  	
+    </form>
 
     <script>
+    	
+    	function getinfo() {
 
-      var truckArray = [
-  {
-    name: "Toyota Tacoma",
-    power: "four cylinder",
-    door: "four"
-    },
-  {
-  	name: "chevrolet silverado",
-  	power: "eight cylinder",
-  	door: "four"
-    },
-  {
-    name: "ford f10",
-    power: "six cylinder",
-    door: "four"
-  }
-    ]
+    		var username = document.getElementById("username").value
+    		var password = document.getElementById("password").value
 
-    for(i = 0; i < truckArray.length; i++){
-    	if(truckArray[i].power <= 4){
-    		console.log(truckArray[i].name + "" + truckArray[i].power)
-      	
-   </script>
-  </body>    
+    		console.log("your username is" + username + "and your password is" + password)
+    	}
+
+	 </script>
+  </body>
 </html>
