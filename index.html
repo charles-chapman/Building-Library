@@ -10,20 +10,12 @@
     
      <script src="js/main.js"></script>
 
-     <!--web snow-->
-     <script src="js/Websnowjq/Websnowjq.js"></script>
-
-     <script type="text/javascript" src="js/app.js"> </script>
-
-     <link rel="stylesheet" type="text/css" href="css./main.css">
-
      <style>
-       
-       <div 
+     	
+       .intro {background: blue; }
+
      </style>
 
-
-   
   <title></title>
 
   </head>
@@ -31,23 +23,28 @@
 
   <body>
 
-    <!--be mindful on some function have capital letters, many don't-->
-    <div id="divSnow"></div>
-    
+    <h1>Test</h1>
 
-      <script>
+    <button id="btn">Click to Append</button>
 
-        $(document).ready(function() {           
+    <script>
 
-                //notice, instead of using the css file, we place the info here in the index//
-        		$('#divSnow').animate({
-        			left:   '200px',
-        			width:  '400px',
-        			height: '300px'
-        		})
-        	})
-      	
-      </script>
-      
+       $(document).ready(function(){
+
+       	  $('#btn').click(function(){
+
+       	  	$('h1').toggleClass('intro')
+       	  	
+       	  })
+       })
+    	
+
+
+
+    </script>
+
+
+
+
   </body>
 </html>
