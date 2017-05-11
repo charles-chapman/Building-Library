@@ -10,23 +10,37 @@
     
      <script src="js/main.js"></script>
 
+  <title></title>
+
   </head>
 
 
   <body>
 
-    <h1> Week 8 Review Exercises</h1>
+    <ul id="newList">
+      <li>one</li>
+      <li>two</li>
+      <li>threee</li>
+    </ul>
 
-    <p id="demo"></p>
+  <button id="btn">Click to Append</button>
 
-    <script>
-    var text="";
-    var i;
-    for (i = 0; i<101; i = i + 5) {
-    	text += "the number is" + i + "<br>";
-    }
-    document.getElementById("demo").innerHTML = text;
-    
-    </script>
+  <script>
+  	
+  	$(document).ready(function() {
+
+  		$('#btn').click(function(){
+
+  			$('#newList').append('<li>four</li>')
+  		})
+
+ 	})
+
+
+  </script> 
+
+
+
+
   </body>
-  </html>
+</html>
