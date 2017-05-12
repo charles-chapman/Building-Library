@@ -10,6 +10,12 @@
     
      <script src="js/main.js"></script>
 
+     <style>
+     	
+       .intro {background: blue; }
+
+     </style>
+
   <title></title>
 
   </head>
@@ -17,27 +23,28 @@
 
   <body>
 
-    <ul id="newList">
-      <li>one</li>
-      <li>two</li>
-      <li>threee</li>
-    </ul>
+    <h1>Test</h1>
 
-  <button id="btn">Click to Prepend</button>
+    <button id="btn">Click to Append</button>
 
-  <script>
-  	
-  	$(document).ready(function() {
+    <script>
 
-  		$('#btn').click(function(){
+       $(document).ready(function(){
 
-  			$('#newList').append('<li>zero</li>')
-  		})
+       	  $('#btn').click(function(){
 
- 	})
+       	  	$('h1').addClass('intro')
+       	  	
+       	  })
+       })
+    	
 
 
-  </script> 
+
+    </script>
+
+
+
 
   </body>
 </html>
