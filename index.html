@@ -10,41 +10,38 @@
     
      <script src="js/main.js"></script>
 
-     <style>
-     	
-       .intro {background: red; }
-
-     </style>
-
-  <title></title>
-
   </head>
-
 
   <body>
 
-    <h1 class="intro">Test</h1>
+    <h1>JavaScript Arrays</h1>
 
-    <button id="btn">Click to Append</button>
+    <p id="demo"></p>
 
     <script>
 
-       $(document).ready(function(){
+      var truckArray = [
+  {
+    name: "Toyota Tacoma",
+    power: "four cylinder",
+    door: "four"
+    },
+  {
+  	name: "chevrolet silverado",
+  	power: "eight cylinder",
+  	door: "four"
+    },
+  {
+    name: "ford f10",
+    power: "six cylinder",
+    door: "four"
+  }
+    ]
 
-       	  $('#btn').click(function(){
-
-       	  	$('h1').removeClass('intro')
-       	  	
-       	  })
-       })
-    	
-
-
-
-    </script>
-
-
-
-
-  </body>
+    for(i = 0; i < truckArray.length; i++){
+    	if(truckArray[i].power <= 4){
+    		console.log(truckArray[i].name + "" + truckArray[i].power)
+      	
+   </script>
+  </body>    
 </html>
